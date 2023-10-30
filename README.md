@@ -70,12 +70,11 @@ Thus, the implementation of Linked File allocation Methods in C program is done 
 To implement Indexed File allocation Methods in C program.
 
 ## ALGORITHM:
-   
-   1. Define an array to represent disk blocks, as well as variables and functions for managing file allocation within index blocks.
-    2.In the recurse1 function, ask the user for an index block, check if it's already allocated, and prompt for the number of files needed.
-    3.In the recurse2 function, allow the user to select blocks for file allocation within an index block, check if they are available, and allocate the files if free, printing the allocated files.
-    4.Handle cases where the selected blocks are already allocated and prompt the user to try again.
-    5.After allocating files, ask the user if they want to enter more files; if yes, call recurse1 to continue the process, or exit the program if no more files are to be allocated.
+1. Define an array to represent disk blocks, as well as variables and functions for managing file allocation within index blocks.
+2. In the recurse1 function, ask the user for an index block, check if it's already allocated, and prompt for the number of files needed.
+3. In the recurse2 function, allow the user to select blocks for file allocation within an index block, check if they are available, and allocate the files if free, printing the allocated files.
+4. Handle cases where the selected blocks are already allocated and prompt the user to try again.
+5. After allocating files, ask the user if they want to enter more files; if yes, call recurse1 to continue the process, or exit the program if no more files are to be allocated.
 
 ## PROGRAM:
 ```
@@ -142,11 +141,11 @@ To implement file management using Linked list.
 
 ## ALGORITHM:
    
-   1. The program initializes an array f to represent the free blocks on the disk and sets all blocks to 0 (free).
-   2. The user is asked to enter the number of blocks already allocated and then to input the blocks that are already allocated (marked as 1 in the f array).
-   3. It uses a label x to allow the user to repeatedly enter the starting block and length for files to allocate.
-   4. For each file, it checks if the starting block is free; if so, it allocates consecutive blocks and marks them as allocated (1) in the f array. It also prints the allocated blocks. If a block is already allocated, it continues to allocate the file in the next available block.
-   5. After allocating a file, the program asks if the user wants to enter more files (1 for Yes, 0 for No). If the user chooses to enter more files, it jumps to label x, allowing the process to repeat. If the user decides not to enter more files, the program exits.
+1. The program initializes an array f to represent the free blocks on the disk and sets all blocks to 0 (free).
+2. The user is asked to enter the number of blocks already allocated and then to input the blocks that are already allocated (marked as 1 in the f array).
+3. It uses a label x to allow the user to repeatedly enter the starting block and length for files to allocate.
+4. For each file, it checks if the starting block is free; if so, it allocates consecutive blocks and marks them as allocated (1) in the f array. It also prints the allocated blocks. If a block is already allocated, it continues to allocate the file in the next available block.
+5. After allocating a file, the program asks if the user wants to enter more files (1 for Yes, 0 for No). If the user chooses to enter more files, it jumps to label x, allowing the process to repeat. If the user decides not to enter more files, the program exits.
 
 ## PROGRAM:
 ```
@@ -204,11 +203,11 @@ To implement Sequential File allocation Methods in C program.
 
 ## ALGORITHM:
   
-   1. Define an array to represent free blocks on a disk and create a function recurse for handling file allocation.
-   2. In the recurse function, ask the user for the starting block and length of files they want to allocate.
-   3. Check if the specified blocks are available for the entire file length, and allocate the file if they are, marking the blocks as allocated.
-   4. If the required blocks are not available for the entire file length, inform the user that allocation is not possible.
-   5. After allocating a file, ask the user if they want to allocate more files (1 for yes, 0 for no), and either call recurse again or exit the program accordingly.
+1. Define an array to represent free blocks on a disk and create a function recurse for handling file allocation.
+2. In the recurse function, ask the user for the starting block and length of files they want to allocate.
+3. Check if the specified blocks are available for the entire file length, and allocate the file if they are, marking the blocks as allocated.
+4. If the required blocks are not available for the entire file length, inform the user that allocation is not possible.
+5. After allocating a file, ask the user if they want to allocate more files (1 for yes, 0 for no), and either call recurse again or exit the program accordingly.
 
 ## PROGRAM:
 ```
