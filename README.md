@@ -2,6 +2,7 @@
 # CONTIGUOUS ALLOCATION
 ## AIM:
 To implement Contiguous File allocation Methods in C program.
+
 ## ALGORITHM:
     1.Define a function recurse to allocate files on a disk using the First Fit technique, taking an array to represent free disk blocks.
     2.In the recurse function, prompt the user to enter the starting block and length of a file to allocate.
@@ -65,12 +66,14 @@ Thus, the implementation of Linked File allocation Methods in C program is done 
 # INDEXED ALLOCATION
 ## AIM:
 To implement Indexed File allocation Methods in C program.
+
 ## ALGORITHM:
    1. Define an array to represent disk blocks, as well as variables and functions for managing file allocation within index blocks.
     2.In the recurse1 function, ask the user for an index block, check if it's already allocated, and prompt for the number of files needed.
     3.In the recurse2 function, allow the user to select blocks for file allocation within an index block, check if they are available, and allocate the files if free, printing the allocated files.
     4.Handle cases where the selected blocks are already allocated and prompt the user to try again.
     5.After allocating files, ask the user if they want to enter more files; if yes, call recurse1 to continue the process, or exit the program if no more files are to be allocated.
+
 ## PROGRAM:
 ```
 #include<stdio.h>
@@ -126,19 +129,20 @@ getch();
 ```
 ## OUTPUT:
 ![278819996-aec236a9-05aa-4a0b-b7ff-bd97a3373807](https://github.com/Snehahv/OS-EX.12-IMPLEMENTATION-OF-FILE-ALLOCATION-METHODS/assets/119104131/e8a5e7b1-7c68-4578-922b-ab50918963d4)
-
 ## RESULT:
 Thus, the implementation of Indexed File allocation Methods in C program is done successfully.
 
 # LINKED FILE ALLOCATION
 ## AIM:
 To implement file management using Linked list.
+
 ## ALGORITHM:
    1. The program initializes an array f to represent the free blocks on the disk and sets all blocks to 0 (free).
    2. The user is asked to enter the number of blocks already allocated and then to input the blocks that are already allocated (marked as 1 in the f array).
    3. It uses a label x to allow the user to repeatedly enter the starting block and length for files to allocate.
    4. For each file, it checks if the starting block is free; if so, it allocates consecutive blocks and marks them as allocated (1) in the f array. It also prints the allocated blocks. If a block is already allocated, it continues to allocate the file in the next available block.
    5. After allocating a file, the program asks if the user wants to enter more files (1 for Yes, 0 for No). If the user chooses to enter more files, it jumps to label x, allowing the process to repeat. If the user decides not to enter more files, the program exits.
+
 ## PROGRAM:
 ```
 #include <stdio.h>
@@ -191,6 +195,7 @@ Thus, the implementation of Linked File allocation Methods in C program is done 
 # SEQUENTIAL FILE ALLOCATION
 ## AIM:
 To implement Sequential File allocation Methods in C program.
+
 ## ALGORITHM:
    1. Define an array to represent free blocks on a disk and create a function recurse for handling file allocation.
    2. In the recurse function, ask the user for the starting block and length of files they want to allocate.
