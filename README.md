@@ -6,11 +6,11 @@ To implement Contiguous File allocation Methods in C program.
 
 ## ALGORITHM:
    
-    1.Define a function recurse to allocate files on a disk using the First Fit technique, taking an array to represent free disk blocks.
-    2.In the recurse function, prompt the user to enter the starting block and length of a file to allocate.
-    3.Check if consecutive blocks starting from the user-defined block are free, allocate the file if they are, and print the allocated blocks.
-    4.If any of the blocks are not free, indicate that the file cannot be allocated contiguously.
-    5.After processing one file allocation, ask the user if they want to allocate more files; if yes, call the recurse function recursively; otherwise, exit the program.
+1. Define a function recurse to allocate files on a disk using the First Fit technique, taking an array to represent free disk blocks.
+2. In the recurse function, prompt the user to enter the starting block and length of a file to allocate.
+3. Check if consecutive blocks starting from the user-defined block are free, allocate the file if they are, and print the allocated blocks.
+4. If any of the blocks are not free, indicate that the file cannot be allocated contiguously.
+5. After processing one file allocation, ask the user if they want to allocate more files; if yes, call the recurse function recursively; otherwise, exit the program.
 
 ## PROGRAM:
 ```
