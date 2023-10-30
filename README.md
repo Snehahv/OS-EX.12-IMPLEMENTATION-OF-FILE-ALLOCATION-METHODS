@@ -1,9 +1,11 @@
 # OS-EX.12-IMPLEMENTATION-OF-FILE-ALLOCATION-METHODS
 # CONTIGUOUS ALLOCATION
+
 ## AIM:
 To implement Contiguous File allocation Methods in C program.
 
 ## ALGORITHM:
+   
     1.Define a function recurse to allocate files on a disk using the First Fit technique, taking an array to represent free disk blocks.
     2.In the recurse function, prompt the user to enter the starting block and length of a file to allocate.
     3.Check if consecutive blocks starting from the user-defined block are free, allocate the file if they are, and print the allocated blocks.
@@ -68,6 +70,7 @@ Thus, the implementation of Linked File allocation Methods in C program is done 
 To implement Indexed File allocation Methods in C program.
 
 ## ALGORITHM:
+   
    1. Define an array to represent disk blocks, as well as variables and functions for managing file allocation within index blocks.
     2.In the recurse1 function, ask the user for an index block, check if it's already allocated, and prompt for the number of files needed.
     3.In the recurse2 function, allow the user to select blocks for file allocation within an index block, check if they are available, and allocate the files if free, printing the allocated files.
@@ -133,10 +136,12 @@ getch();
 Thus, the implementation of Indexed File allocation Methods in C program is done successfully.
 
 # LINKED FILE ALLOCATION
+
 ## AIM:
 To implement file management using Linked list.
 
 ## ALGORITHM:
+   
    1. The program initializes an array f to represent the free blocks on the disk and sets all blocks to 0 (free).
    2. The user is asked to enter the number of blocks already allocated and then to input the blocks that are already allocated (marked as 1 in the f array).
    3. It uses a label x to allow the user to repeatedly enter the starting block and length for files to allocate.
@@ -193,10 +198,12 @@ x:
 Thus, the implementation of Linked File allocation Methods in C program is done successfully.
 
 # SEQUENTIAL FILE ALLOCATION
+
 ## AIM:
 To implement Sequential File allocation Methods in C program.
 
 ## ALGORITHM:
+  
    1. Define an array to represent free blocks on a disk and create a function recurse for handling file allocation.
    2. In the recurse function, ask the user for the starting block and length of files they want to allocate.
    3. Check if the specified blocks are available for the entire file length, and allocate the file if they are, marking the blocks as allocated.
